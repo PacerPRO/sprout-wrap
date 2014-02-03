@@ -24,6 +24,7 @@ recipes:
 - pivotal_workstation::gem_setup
 - pivotal_workstation::mysql
 - pivotal_workstation::postgres
+- pivotal_workstation::redis
 - sprout-osx-apps::imagemagick
 - sprout-osx-apps::node_js
 - sprout-osx-apps::qt
@@ -52,23 +53,24 @@ recipes:
 - sprout-homebrew
 
 node_attributes:
-  git_pairs_domain: pivotallabs.com
+  git_pairs_domain: pacerpro.com
   git_pairs_authors:
-    - initials: ah
-      name: Abhijit Hiremagalur
-      shortname: abhi
-    - initials: bc
-      name: Brian Cunnie
-      shortname: cunnie
-    - initials: jrhb
-      name: Jonathan Barnes
-    - initials: lw
-      name: Luke Winikates
-      shortname: lwinikates
+    - initials: gm
+      name: Gavin McGrane
+      shortname: gavub
+    - initials: tm
+      name: Thor Muller
+      shortname: thor
+    - initials: mh
+      name: Matt Hargett
+      shortname: matt
+    - initials: rd
+      name: Ryan Dy
+      shortname: rdy
   git_projects:
     -
-      - sprout-wrap
-      - https://github.com/pivotal-sprout/sprout-wrap.git
+      - pacerpro
+      - https://github.com/PacerPRO/pacerpro.git
   sprout:
     homebrew:
       casks:
