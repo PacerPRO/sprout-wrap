@@ -22,7 +22,6 @@ recipes:
 # development (rails)
 - sprout-osx-rbenv
 - pivotal_workstation::gem_setup
-- pivotal_workstation::mysql
 - pivotal_workstation::postgres
 - pivotal_workstation::redis
 - sprout-osx-apps::imagemagick
@@ -38,6 +37,8 @@ recipes:
 - pivotal_workstation::github_for_mac
 - sprout-osx-apps::iterm2
 - sprout-osx-apps::keycastr
+- sprout-osx-apps::chrome_canary
+- sprout-osx-apps::sourcetree
 
 # apps (editors)
 - sprout-osx-apps::textmate
@@ -49,6 +50,8 @@ recipes:
 
 - sprout-osx-apps::rubymine
 - sprout-osx-rubymine::preferences
+
+- sprout-osx-apps::sublime_text
 
 - sprout-homebrew
 
@@ -82,3 +85,16 @@ node_attributes:
         - skype
         - vagrant
         - virtualbox
+    rbenv:
+      default_ruby: 2.0.0-p353
+  bash_it:
+    enabled_plugins:
+      aliases:
+        - git
+      plugins:
+        - git
+        - node
+        - rbenv
+  rbenv:
+    rubies:
+      - 2.0.0-p353
