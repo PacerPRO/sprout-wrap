@@ -11,6 +11,7 @@ recipes:
 - sprout-osx-settings::defaults_fast_key_repeat_rate
 - pivotal_workstation::locate_on
 - sprout-osx-settings::global_environment_variables
+- sprout-osx-settings::function_keys
 
 # development (general)
 - sprout-osx-base::workspace_directory
@@ -39,6 +40,8 @@ recipes:
 - sprout-osx-apps::keycastr
 - sprout-osx-apps::chrome_canary
 - sprout-osx-apps::sourcetree
+- sprout-osx-apps::sizeup
+- sprout-osx-apps::heroku_toolbelt
 
 # apps (editors)
 - sprout-osx-apps::textmate
@@ -87,6 +90,9 @@ node_attributes:
         - virtualbox
     rbenv:
       default_ruby: 2.0.0-p353
+    rubymine:
+      preferences:
+        dir: /Users/pacerpro/Library/Preferences/RubyMine60
   bash_it:
     enabled_plugins:
       aliases:
