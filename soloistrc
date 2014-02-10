@@ -88,8 +88,6 @@ node_attributes:
         - skype
         - vagrant
         - virtualbox
-    rbenv:
-      default_ruby: 2.0.0-p353
     rubymine:
       preferences:
         dir: /Users/pacerpro/Library/Preferences/RubyMine60
