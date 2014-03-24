@@ -79,7 +79,6 @@ node_attributes:
   sprout:
     homebrew:
       casks:
-        - bettertouchtool
         - dropbox
         - firefox
         - gitx-rowanj
