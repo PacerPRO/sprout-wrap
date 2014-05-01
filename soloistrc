@@ -62,7 +62,7 @@ node_attributes:
   git_pairs_authors:
     - initials: gm
       name: Gavin McGrane
-      shortname: gavub
+      shortname: gavin
     - initials: tm
       name: Thor Muller
       shortname: thor
