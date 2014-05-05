@@ -6,7 +6,7 @@ cookbook 'meta',
   :path => 'site-cookbooks/meta'
 
 cookbook 'sprout-rbenv',
-  :github => 'pivotal-sprout/sprout-rbenv'
+  :github => 'matthargett/sprout-rbenv'
 
 cookbook 'sprout-ruby',
   :github => 'pivotal-sprout/sprout-ruby'

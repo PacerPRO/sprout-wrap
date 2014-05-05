@@ -5,6 +5,15 @@ SITE
     homebrew (1.5.4)
 
 GIT
+  remote: https://github.com/matthargett/sprout-rbenv
+  ref: master
+  sha: a507084ec349a0aaf7027f5b2f0704db27d96917
+  specs:
+    sprout-rbenv (0.1.0)
+      homebrew (>= 0.0.0)
+      sprout-base (>= 0.0.0)
+
+GIT
   remote: https://github.com/pivotal-sprout/sprout
   path: osx
   ref: master
@@ -76,15 +85,6 @@ GIT
   specs:
     sprout-postgresql (0.1.0)
       homebrew (~> 1.5.4)
-      sprout-base (>= 0.0.0)
-
-GIT
-  remote: https://github.com/pivotal-sprout/sprout-rbenv
-  ref: master
-  sha: 1e2e99e9642762c9c5e7e99a0fecabeba655c8ef
-  specs:
-    sprout-rbenv (0.1.0)
-      homebrew (>= 0.0.0)
       sprout-base (>= 0.0.0)
 
 GIT
