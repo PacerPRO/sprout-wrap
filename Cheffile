@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 site 'http://community.opscode.com/api/v1'
 
 cookbook 'meta',
@@ -6,14 +8,8 @@ cookbook 'meta',
 cookbook 'sprout-rbenv',
   :github => 'pivotal-sprout/sprout-rbenv'
 
-cookbook 'sprout-ssh',
-  :github => 'pivotal-sprout/sprout-ssh'
-
-cookbook 'sprout-terminal',
-  :github => 'pivotal-sprout/sprout-terminal'
-
-cookbook 'sprout-redis',
-  :github => 'pivotal-sprout/sprout-redis'
+cookbook 'sprout-ruby',
+  :github => 'pivotal-sprout/sprout-ruby'
 
 cookbook 'sprout-git',
   :github => 'pivotal-sprout/sprout-git'
@@ -21,26 +17,19 @@ cookbook 'sprout-git',
 cookbook 'sprout-base',
   :github => 'pivotal-sprout/sprout-base'
 
-cookbook 'pivotal_workstation',
-  :git => 'git://github.com/pivotal-sprout/sprout.git',
-  :path => 'pivotal_workstation'
-
 cookbook 'sprout-osx-apps',
-  :git => 'git://github.com/pivotal-sprout/sprout.git',
+  :github => 'pivotal-sprout/sprout',
   :path => 'sprout-osx-apps'
 
 cookbook 'sprout-osx-settings',
   :github => 'pivotal-sprout/sprout-osx-settings'
 
 cookbook 'sprout-pivotal',
-  :git => 'git://github.com/pivotal-sprout/sprout.git',
+  :github => 'pivotal-sprout/sprout',
   :path => 'sprout-pivotal'
 
-cookbook 'sprout-postgresql',
-  :github => 'pivotal-sprout/sprout-postgresql'
-
 cookbook 'osx',
-  :git => 'git://github.com/pivotal-sprout/sprout.git',
+  :github => 'pivotal-sprout/sprout',
   :path => 'osx'
 
 cookbook 'sprout-rubymine',
@@ -48,3 +37,15 @@ cookbook 'sprout-rubymine',
 
 cookbook 'sprout-homebrew',
   :github => 'pivotal-sprout/sprout-homebrew'
+
+cookbook 'sprout-terminal',
+  :github => 'pivotal-sprout/sprout-terminal'
+
+cookbook 'sprout-postgresql',
+  :github => 'pivotal-sprout/sprout-postgresql'
+
+cookbook 'sprout-ssh',
+  :github => 'pivotal-sprout/sprout-ssh'
+
+cookbook 'sprout-redis',
+  :github => 'pivotal-sprout/sprout-redis'

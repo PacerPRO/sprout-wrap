@@ -5,7 +5,7 @@ SITE
     homebrew (1.5.4)
 
 GIT
-  remote: git://github.com/pivotal-sprout/sprout.git
+  remote: https://github.com/pivotal-sprout/sprout
   path: osx
   ref: master
   sha: 41dd47dc3bb4007bf5ad5a63c2897ec41cf89dd5
@@ -13,23 +13,7 @@ GIT
     osx (0.1.0)
 
 GIT
-  remote: git://github.com/pivotal-sprout/sprout.git
-  path: pivotal_workstation
-  ref: master
-  sha: 41dd47dc3bb4007bf5ad5a63c2897ec41cf89dd5
-  specs:
-    pivotal_workstation (1.0.0)
-      dmg (>= 0.0.0)
-      homebrew (>= 0.0.0)
-      osx (>= 0.0.0)
-      sprout-base (>= 0.0.0)
-      sprout-osx-apps (>= 0.0.0)
-      sprout-osx-settings (>= 0.0.0)
-      sprout-pivotal (>= 0.0.0)
-      sprout-postgresql (>= 0.0.0)
-
-GIT
-  remote: git://github.com/pivotal-sprout/sprout.git
+  remote: https://github.com/pivotal-sprout/sprout
   path: sprout-osx-apps
   ref: master
   sha: 41dd47dc3bb4007bf5ad5a63c2897ec41cf89dd5
@@ -41,7 +25,7 @@ GIT
       sprout-osx-settings (>= 0.0.0)
 
 GIT
-  remote: git://github.com/pivotal-sprout/sprout.git
+  remote: https://github.com/pivotal-sprout/sprout
   path: sprout-pivotal
   ref: master
   sha: 41dd47dc3bb4007bf5ad5a63c2897ec41cf89dd5
@@ -113,6 +97,14 @@ GIT
       sprout-base (>= 0.0.0)
 
 GIT
+  remote: https://github.com/pivotal-sprout/sprout-ruby
+  ref: master
+  sha: dfc96330f8dee89f96c0f2e14dce87c7e03a2359
+  specs:
+    sprout-ruby (0.1.0)
+      sprout-base (>= 0.0.0)
+
+GIT
   remote: https://github.com/pivotal-sprout/sprout-rubymine
   ref: master
   sha: 4db34901eb9358a80bfc05e3c9d9baf8525a0b40
@@ -143,15 +135,11 @@ PATH
   remote: site-cookbooks/meta
   specs:
     meta (0.1.1)
-      pivotal_workstation (>= 0.0.0)
-      sprout-osx-apps (>= 0.0.0)
-      sprout-osx-settings (>= 0.0.0)
       sprout-pivotal (>= 0.0.0)
 
 DEPENDENCIES
   meta (>= 0)
   osx (>= 0)
-  pivotal_workstation (>= 0)
   sprout-base (>= 0)
   sprout-git (>= 0)
   sprout-homebrew (>= 0)
@@ -161,6 +149,7 @@ DEPENDENCIES
   sprout-postgresql (>= 0)
   sprout-rbenv (>= 0)
   sprout-redis (>= 0)
+  sprout-ruby (>= 0)
   sprout-rubymine (>= 0)
   sprout-ssh (>= 0)
   sprout-terminal (>= 0)
