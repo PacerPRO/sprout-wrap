@@ -93,6 +93,7 @@ node_attributes:
         - imagemagick
         - node
         - pstree
+        - qt
         - ssh-copy-id
         - tmux
         - tree
@@ -105,7 +106,6 @@ node_attributes:
         - gitx-rowanj
         - github
         - google-chrome
-        - libreoffice
         - menumeters
         - shiftit
         - skype
