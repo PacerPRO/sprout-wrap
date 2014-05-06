@@ -15,7 +15,6 @@ recipes:
 
 # development (general)
 - sprout-base::workspace_directory
-- sprout-ssh
 - sprout-git::config
 - sprout-git::git_projects
 - sprout-git::git_scripts
