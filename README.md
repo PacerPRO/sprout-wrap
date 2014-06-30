@@ -37,7 +37,7 @@ If you receive a message about the update server being unavailable and are on Ma
 If you're running under rvm or rbenv, you shouldn't preface the following commands with `sudo`.
 
     sudo gem install bundler
-    sudo bundle
+    bundle
 
 If you receive errors like this:
 
@@ -53,3 +53,15 @@ then try downgrading those errors like this:
 
     bundle exec soloist
 
+## Roadmap
+
+See Pivotal Tracker: https://www.pivotaltracker.com/s/projects/884116
+
+## Discussion List
+
+  Join [sprout-users@googlegroups.com](https://groups.google.com/forum/#!forum/sprout-users) if you use Sprout.
+
+## References
+
+* Slides from @hiremaga's [lightning talk on Sprout](http://sprout-talk.cfapps.io/) at Pivotal Labs in June 2013
+* [Railscast on chef-solo](http://railscasts.com/episodes/339-chef-solo-basics) by Ryan Bates (PAID)

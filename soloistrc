@@ -4,19 +4,25 @@ recipes:
 - sprout-base
 - sprout-base::bash_it
 - sprout-base::homebrew
+- sprout-homebrew
 
 # settings
 - sprout-osx-settings::defaults_fast_key_repeat_rate
 - sprout-osx-settings::global_environment_variables
 - sprout-osx-settings::function_keys
 - sprout-osx-settings
+- sprout-osx-settings::dock_preferences
 - sprout-terminal
 - sprout-terminal::update_font
+- sprout-ssh::known_hosts_github
 
 # development (general)
 - sprout-base::workspace_directory
 - sprout-git::config
 - sprout-git::git_projects
+- sprout-git
+- sprout-git::default_editor
+- sprout-git::projects
 - sprout-git::git_scripts
 
 # development (rails)
@@ -43,8 +49,8 @@ recipes:
 
 # apps
 - sprout-osx-apps::iterm2
-- sprout-osx-apps::keycastr
 - sprout-osx-apps::flycut
+- sprout-osx-apps::shiftit
 
 # apps (editors)
 - sprout-osx-apps::textmate_bundles
@@ -72,23 +78,16 @@ node_attributes:
     - initials: rd
       name: Ryan Dy
       shortname: rdy
-    - initials: fs
-      name: Forrest Slater
-      shortname: forrest
 # FIXME: disabled due to https://github.com/pivotal-sprout/sprout-git/issues/1
 #  git_projects:
 #    -
 #      - pacerpro
 #      - https://github.com/PacerPRO/pacerpro.git
-  sprout:
-    terminal:
-      default_profile: 'Pro'
-    settings:
-      clock_format: EEE MMM d  h:mm:ss a
     homebrew:
       formulae:
-        - ack
         - ctags-exuberant
+        - ag
+        - chromedriver
         - imagemagick
         - node
         - pstree
@@ -98,19 +97,24 @@ node_attributes:
         - tree
         - watch
         - wget
+        - rbenv-binstubs
+        - rbenv-gem-rehash
       casks:
         - ccmenu
-        - dropbox
         - firefox
         - gitx-rowanj
         - github
         - google-chrome
         - menumeters
         - shiftit
+        - google-drive
+        - google-hangouts
         - skype
         - textmate
         - vagrant
         - virtualbox
+        - xquartz
+        - xscope
     rubymine:
       preferences:
         dir: /Users/pacerpro/Library/Preferences/RubyMine60
